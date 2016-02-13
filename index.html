@@ -91,16 +91,19 @@
               <div>
                 <strong>Emmett Armstrong</strong>
               </div>
-              <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
-                <li class="mdl-menu__item">About</li>
-                <li class="mdl-menu__item">Message</li>
-                <li class="mdl-menu__item">Favorite</li>
-                <li class="mdl-menu__item">Search</li>
-              </ul>
-              <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">more_vert</i>
-                <span class="visuallyhidden">show menu</span>
+              <!-- Right aligned menu below button -->
+              <button id="demo-menu-lower-right"
+                      class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
               </button>
+
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                  for="demo-menu-lower-right">
+                <li class="mdl-menu__item">Some Action</li>
+                <li class="mdl-menu__item">Another Action</li>
+                <li disabled class="mdl-menu__item">Disabled Action</li>
+                <li class="mdl-menu__item">Yet Another Action</li>
+              </ul>
             </div>
           </div>
           <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
@@ -180,7 +183,7 @@
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
-    <script src="../../material.min.js"></script>
+    <script src="material.min.js"></script>
   </body>
   <script>
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media' && '.mdl-button__media'), function(el) {
