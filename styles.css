@@ -230,8 +230,8 @@ body .demo-blog {
 }
 .demo-blog .something-else > button {
   position: absolute;
-  top: 0;
-  right: 28px;
+  bottom: 0;
+  right: 25px;
   -webkit-transform: translate(0px, -28px);
       -ms-transform: translate(0px, -28px);
           transform: translate(0px, -28px);
@@ -243,9 +243,10 @@ body .demo-blog {
   border-top-right-radius: 2px;
 }
 .demo-blog .something-else .mdl-card__media img {
-  width: 64px;
-  height: 64px;
+  width: 220px;
+  height: 220px;
   margin-bottom: 10px;
+  border-radius: 100%;
 }
 .demo-blog .something-else .mdl-card__supporting-text {
   background-color: #F5F5F5;
