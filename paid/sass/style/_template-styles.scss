@@ -1,0 +1,327 @@
+/*!
+ *
+ *
+ * Material Design for Bootstrap
+ * www.mdbootstrap.com
+ *
+ *
+ */
+
+/*********************
+  BASE
+**********************/
+
+header,
+main,
+footer,
+.double-navbar {
+    padding-left: 240px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+@media only screen and (max-width: 992px) {
+    header,
+    main,
+    footer,
+    .double-navbar {
+        padding-left: 0;
+    }
+}
+
+
+/* Main wrapper */
+
+.main-wrapper {
+    margin-top: 50px;
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .main-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    main {
+        padding-top: 20px;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .main-wrapper {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .main-wrapper {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1400px) {
+    .main-wrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+/*********************
+  TEMPLATE COLORS
+**********************/
+
+$primary-tem-color: #2E2E2E;
+$secondary-tem-color: #4D5668;
+$extra-tem-color: #3F729B;
+.primary-tem-color {
+    background-color: $primary-tem-color!important;
+}
+
+.secondary-tem-color {
+    background-color: $secondary-tem-color!important;
+}
+
+.extra-tem-color {
+    background-color: $extra-tem-color!important;
+}
+
+
+/*********************
+  COMPONENTS COLORS
+**********************/
+
+
+/* Elegant Cards */
+
+.elegant-card,
+.card-product,
+.card-min {
+    .card-footer,
+    .btn-floating {
+        background-color: $primary-tem-color!important;
+    }
+    .label {
+        background-color: rgba(69, 82, 110, 0.6)!important;
+    }
+}
+
+
+/* Multi-item carousel */
+
+.multiitem-car {
+    .btn-floating {
+        background-color: $primary-tem-color!important;
+    }
+    .carousel-indicators li {
+        background-color: transparent;
+        border: 1px solid #2F3E9B;
+    }
+    .carousel-indicators .active {
+        background-color: $primary-tem-color!important;
+    }
+}
+
+
+/* Review card */
+
+.review-card {
+    .btn,
+    .btn-floating {
+        background-color: $primary-tem-color!important;
+    }
+    .label {
+        background-color: $secondary-tem-color!important;
+    }
+}
+
+
+/* Pagination */
+
+.pagination .active a {
+    background-color: $primary-tem-color!important;
+}
+
+
+/* Rating */
+
+.rating {
+    background-color: $primary-tem-color!important;
+}
+
+
+/* Button primary */
+
+.btn-primary {
+    background-color: $primary-tem-color!important;
+    &:hover {
+        background-color: lighten($primary-tem-color, 10%)!important;
+    }
+    &:focus {
+        background-color: lighten($primary-tem-color, 10%)!important;
+    }
+}
+
+
+/* Button default */
+
+.btn-default {
+    background-color: $secondary-tem-color!important;
+    &:hover {
+        background-color: lighten($secondary-tem-color, 10%)!important;
+    }
+    &:focus {
+        background-color: lighten($secondary-tem-color, 10%)!important;
+    }
+}
+
+
+/* Button warning */
+
+.btn-warning {
+    background-color: $extra-tem-color!important;
+    &:hover {
+        background-color: lighten($extra-tem-color, 10%)!important;
+    }
+    &:focus {
+        background-color: lighten($extra-tem-color, 10%)!important;
+    }
+}
+
+
+/* Footer */
+
+.page-footer {
+    background-color: $primary-tem-color;
+}
+
+
+
+
+.double-navbar {
+    background-color: $primary-tem-color;
+    ul li a {
+        color: #fff;
+    }
+    .material-icons {
+        font-size: 3em;
+    }
+    .breadcrumbs {
+        color: #fff;
+    }
+}
+
+.top-nav-collapse {
+    background-color: $primary-tem-color;
+    ul li a {
+        color: #fff;
+    }
+    .breadcrumbs {
+        color: #fff;
+    }
+}
+
+
+/* Section title */
+
+section {
+    .section-title {
+        border-left: 4px solid $primary-tem-color;
+        small {
+            border-left: 2px solid $primary-tem-color;
+        }
+    }
+}
+
+.navbar-brand {
+    font-size: 26px;
+}
+ 
+
+/* Widget title */
+
+.widget-title {
+    border-left: 4px solid $primary-tem-color;
+}
+
+
+/* Comments section */
+
+.comments-section {
+    .label {
+        background-color: $secondary-tem-color;
+    }
+    a {
+        color: $secondary-tem-color;
+    }
+}
+
+
+/*********************
+  AFFIX (FIXED SIDEBAR)
+**********************/
+
+.affix-top {
+    position: relative;
+    top: 0px;
+    width: 400px;
+}
+
+.affix {
+    top: 170px;
+}
+
+.affix,
+.affix-bottom {
+    width: 400px;
+}
+
+.affix-bottom {
+    position: absolute;
+}
+
+.affix-end {
+    height: 10px;
+}
+
+#fixed-sidebar .card-panel {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    #fixed-sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #mobile-sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .affix-top,
+    .affix,
+    .affix-bottom {
+        width: 300px
+    }
+}

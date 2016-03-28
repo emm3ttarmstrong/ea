@@ -1,0 +1,301 @@
+/*!
+ *
+ *
+ * Material Design for Bootstrap
+ * www.mdbootstrap.com
+ *
+ *
+ */
+/*********************
+  Mixins
+**********************/
+/*!
+ *
+ *
+ * Material Design for Bootstrap
+ * www.mdbootstrap.com
+ *
+ *
+ */
+/*********************
+  BASE
+**********************/
+header,
+main,
+footer,
+.double-navbar {
+  padding-left: 240px;
+}
+
+main {
+  padding-top: 80px;
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  main,
+  footer,
+  .double-navbar {
+    padding-left: 0;
+  }
+}
+
+/* Main wrapper */
+.main-wrapper {
+  margin-top: 50px;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .main-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  main {
+    padding-top: 20px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .main-wrapper {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1400px) {
+  .main-wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/*********************
+  TEMPLATE COLORS
+**********************/
+.primary-tem-color {
+  background-color: #2E2E2E !important;
+}
+
+.secondary-tem-color {
+  background-color: #4D5668 !important;
+}
+
+.extra-tem-color {
+  background-color: #3F729B !important;
+}
+
+/*********************
+  COMPONENTS COLORS
+**********************/
+/* Elegant Cards */
+.elegant-card .card-footer,
+.elegant-card .btn-floating,
+.card-product .card-footer,
+.card-product .btn-floating,
+.card-min .card-footer,
+.card-min .btn-floating {
+  background-color: #2E2E2E !important;
+}
+
+.elegant-card .label,
+.card-product .label,
+.card-min .label {
+  background-color: rgba(69, 82, 110, 0.6) !important;
+}
+
+/* Multi-item carousel */
+.multiitem-car .btn-floating {
+  background-color: #2E2E2E !important;
+}
+
+.multiitem-car .carousel-indicators li {
+  background-color: transparent;
+  border: 1px solid #2F3E9B;
+}
+
+.multiitem-car .carousel-indicators .active {
+  background-color: #2E2E2E !important;
+}
+
+/* Review card */
+.review-card .btn,
+.review-card .btn-floating {
+  background-color: #2E2E2E !important;
+}
+
+.review-card .label {
+  background-color: #4D5668 !important;
+}
+
+/* Pagination */
+.pagination .active a {
+  background-color: #2E2E2E !important;
+}
+
+/* Rating */
+.rating {
+  background-color: #2E2E2E !important;
+}
+
+/* Button primary */
+.btn-primary {
+  background-color: #2E2E2E !important;
+}
+
+.btn-primary:hover {
+  background-color: #484848 !important;
+}
+
+.btn-primary:focus {
+  background-color: #484848 !important;
+}
+
+/* Button default */
+.btn-default {
+  background-color: #4D5668 !important;
+}
+
+.btn-default:hover {
+  background-color: #636e85 !important;
+}
+
+.btn-default:focus {
+  background-color: #636e85 !important;
+}
+
+/* Button warning */
+.btn-warning {
+  background-color: #3F729B !important;
+}
+
+.btn-warning:hover {
+  background-color: #548cb9 !important;
+}
+
+.btn-warning:focus {
+  background-color: #548cb9 !important;
+}
+
+/* Footer */
+.page-footer {
+  background-color: #2E2E2E;
+}
+
+.double-navbar {
+  background-color: #2E2E2E;
+}
+
+.double-navbar ul li a {
+  color: #fff;
+}
+
+.double-navbar .material-icons {
+  font-size: 3em;
+}
+
+.double-navbar .breadcrumbs {
+  color: #fff;
+}
+
+.top-nav-collapse {
+  background-color: #2E2E2E;
+}
+
+.top-nav-collapse ul li a {
+  color: #fff;
+}
+
+.top-nav-collapse .breadcrumbs {
+  color: #fff;
+}
+
+/* Section title */
+section .section-title {
+  border-left: 4px solid #2E2E2E;
+}
+
+section .section-title small {
+  border-left: 2px solid #2E2E2E;
+}
+
+.navbar-brand {
+  font-size: 26px;
+}
+
+/* Widget title */
+.widget-title {
+  border-left: 4px solid #2E2E2E;
+}
+
+/* Comments section */
+.comments-section .label {
+  background-color: #4D5668;
+}
+
+.comments-section a {
+  color: #4D5668;
+}
+
+/*********************
+  AFFIX (FIXED SIDEBAR)
+**********************/
+.affix-top {
+  position: relative;
+  top: 0px;
+  width: 400px;
+}
+
+.affix {
+  top: 170px;
+}
+
+.affix,
+.affix-bottom {
+  width: 400px;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+.affix-end {
+  height: 10px;
+}
+
+#fixed-sidebar .card-panel {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  #fixed-sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #mobile-sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .affix-top,
+  .affix,
+  .affix-bottom {
+    width: 300px;
+  }
+}
